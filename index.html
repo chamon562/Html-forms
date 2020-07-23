@@ -7,13 +7,46 @@
     <title>HTML Forms</title>
 </head>
 <body>
-    <form action="results.html" method="get">
+    <form action="results.html" method="get" enctype="multipart/form-data">
         <!-- whenever you make fetch request you get some info -->
         <!-- will take information and put form into database user name password -->
+        <div>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" required>
+        </div>
+        
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <div>
+            <label for="age">Age</label>
+            <input type="number" name="age" id="age" min="1" max="200" required>
+    
+        </div>
+
+        <div>
+            <h2>Favorite Foods</h2>
+            <label for="Bananas">Bananas</label>
+            <input type="checkbox" name="Bananas" id="Bananas">
+            <label for="apples" >Apple</label>
+            <input type="checkbox" name="apples" id="apples">
+        </div>
+       
+        <div>
+            <label for="file">File</label>
+            <input type="file" name="file" id="file">
+        </div>
+       
+        <div>
+            <button type="submit">Submit Info</button>
+        </div>
+
+
     </form>
     
     <div class="container">
-        <h1>HTML Forms</h1>
+       
     </div>
 
 
